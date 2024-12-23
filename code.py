@@ -249,7 +249,7 @@ for k in k_range:
 
 best_k = k_range[np.argmax(cv_scores)]
 
-knn = KNeighborsClassifier(n_neighbors=best_k)
+knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(features_train, train_labels)
 
 # %%
